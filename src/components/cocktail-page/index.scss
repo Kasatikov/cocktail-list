@@ -53,8 +53,13 @@
             .cocktail-img {
                 img {
                     max-width: 400px;
+
                     @media only screen and (max-width: 600px) {
                         max-width: 100%;
+                    }
+
+                    @media only screen and (max-width: 900px) {
+                        max-width: 200px;
                     }
                 }
             }
