@@ -4,6 +4,8 @@ import { action, computed, makeObservable } from 'mobx';
 import WebProvider from '../providers/web-provider';
 import { CocktailDto } from '../entity/cocktail/types';
 
+const MAX_AMOUNT_OF_INGREDIENTS = 15;
+
 export default class CocktailOverviewStore extends OverviewBaseStore<CocktailDto> {
     private readonly _cocktailProvider: WebProvider;
 
@@ -41,7 +43,7 @@ export default class CocktailOverviewStore extends OverviewBaseStore<CocktailDto
 
         item?.drinks.map((drink) => {
             drink.ingredientsAndMeasures = [];
-            for (let i = 1; i <= 15; i++) {
+            for (let i = 1; i <= MAX_AMOUNT_OF_INGREDIENTS; i++) {
                 drink.ingredientsAndMeasures.push({
                     ingredient: drink[`strIngredient${i}`],
                     measure: drink[`strMeasure${i}`],
