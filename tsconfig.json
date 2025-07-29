@@ -17,7 +17,7 @@
         "experimentalDecorators": true,
         "skipLibCheck": true,
         "lib": ["DOM", "ES2015"],
-        "noUnusedParameters": true,
+        "noUnusedParameters": true
     },
     "ts-node": {
         "compilerOptions": {
