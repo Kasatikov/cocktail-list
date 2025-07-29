@@ -31,7 +31,7 @@ const CocktailPage: React.FC<CocktailPageProps> = ({ store }) => {
         <div className='page'>
             {item?.drinks.map((drink) => {
                 return (
-                    <div className='content'>
+                    <div className='cocktail-content' key={drink.idDrink}>
                         <div className='main-info-wrapper'>
                             <div className='main-info'>
                                 <div className='name'>{drink.strDrink}</div>
