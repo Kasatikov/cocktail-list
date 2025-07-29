@@ -1,0 +1,59 @@
+.page {
+    display: flex;
+    width: 100%;
+
+    .content {
+        width: 100%;
+        padding: 20px;
+        height: fit-content;
+
+        @media only screen and (max-width: 600px) {
+            margin-top: 40px;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            border-bottom: 2px solid green;
+        }
+        .main-info-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+            }
+            .main-info {
+                word-break: break-all;
+                .name {
+                    margin-bottom: 20px;
+                }
+
+                .instructions-wrapper,
+                .ingredients-wrapper {
+                    margin-top: 20px;
+                }
+
+                .ingredients-wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    .list {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            .cocktail-img {
+                img {
+                    max-width: 400px;
+                    @media only screen and (max-width: 600px) {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

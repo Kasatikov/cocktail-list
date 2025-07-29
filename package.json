@@ -1,0 +1,50 @@
+{
+    "name": "cocktail-list",
+    "version": "1.0.0",
+    "description": "Web app for viewing different cocktails",
+    "main": "index.js",
+    "repository": "https://github.com/Kasatikov/cocktail-list.git",
+    "author": "Sergey Kasatikov",
+    "license": "MIT",
+    "scripts": {
+        "start": "webpack serve --mode development",
+        "build": "webpack --mode production"
+    },
+    "devDependencies": {
+        "@types/circular-dependency-plugin": "^5.0.8",
+        "@types/node": "^24.1.0",
+        "@types/react": "^19.1.8",
+        "@types/react-dom": "^19.1.6",
+        "@types/webpack": "^5.28.5",
+        "@types/webpack-deadcode-plugin": "^0.1.5",
+        "@typescript-eslint/eslint-plugin": "^8.38.0",
+        "@typescript-eslint/parser": "^8.38.0",
+        "circular-dependency-plugin": "^5.2.2",
+        "css-loader": "^7.1.2",
+        "eslint": "8.57.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-react": "7.34.2",
+        "html-webpack-plugin": "^5.6.3",
+        "mini-css-extract-plugin": "^2.9.2",
+        "mobx": "6.13.7",
+        "mobx-react-lite": "4.1.0",
+        "prettier": "3.5.1",
+        "sass": "1.89.2",
+        "sass-loader": "^16.0.5",
+        "style-loader": "^4.0.0",
+        "stylelint": "16.6.1",
+        "ts-loader": "^9.5.2",
+        "ts-node": "^10.9.2",
+        "typescript": "5.8.3",
+        "webpack": "5.100.2",
+        "webpack-cli": "6.0.1",
+        "webpack-deadcode-plugin": "^0.1.17",
+        "webpack-dev-server": "5.2.2"
+    },
+    "dependencies": {
+        "react": "18.3.1",
+        "react-dom": "18.3.1",
+        "react-router-dom": "6.26.2"
+    }
+}

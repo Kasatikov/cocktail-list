@@ -1,0 +1,33 @@
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: pink;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        height: 40px;
+        width: 100%;
+    }
+
+
+    .item {
+        padding: 20px;
+        border-bottom: 1px solid green;
+
+        @media only screen and (max-width: 600px) {
+            border-bottom: none;
+            display: flex;
+            align-items: center;
+        }
+
+        &.active {
+            background-color: sandybrown;
+        }
+    }
+}

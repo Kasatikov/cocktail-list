@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "module": "ESNext",
+        "target": "ES6",
+        "jsx": "react-jsx",
+        "allowJs": false,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "useDefineForClassFields": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "lib": ["DOM", "ES2015"],
+        "noUnusedParameters": true,
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}

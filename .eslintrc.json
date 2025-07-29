@@ -1,0 +1,17 @@
+{
+    "extends": ["prettier", "plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+        "@typescript-eslint/ban-ts-comment": "warn"
+    },
+    "overrides": [
+        {
+            "plugins": ["import"],
+            "files": ["*"],
+            "rules": {
+                "import/newline-after-import": ["error", { "count": 1 }],
+                "jsx-quotes": ["error", "prefer-single"]
+            }
+        }
+    ]
+}
